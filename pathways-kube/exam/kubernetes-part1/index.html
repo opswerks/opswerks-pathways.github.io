@@ -473,18 +473,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#coreconcept-namespace-deployments" class="md-nav__link">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
     <span class="md-ellipsis">
-      CoreConcept: Namespace, Deployments
+      Core Concepts: Namespace, Deployments
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#coreconcept-configmap-secrets" class="md-nav__link">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
     <span class="md-ellipsis">
-      CoreConcept: ConfigMap, Secrets
+      Core Concepts: ConfigMap, Secrets
     </span>
   </a>
   
@@ -586,18 +586,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#coreconcept-namespace-deployments" class="md-nav__link">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
     <span class="md-ellipsis">
-      CoreConcept: Namespace, Deployments
+      Core Concepts: Namespace, Deployments
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#coreconcept-configmap-secrets" class="md-nav__link">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
     <span class="md-ellipsis">
-      CoreConcept: ConfigMap, Secrets
+      Core Concepts: ConfigMap, Secrets
     </span>
   </a>
   
@@ -657,7 +657,7 @@
 <li>Make sure you can login to your instance using your account and password (<a href="https://pathways-lab.opswerks.net/pathways-linux/lab/environment/">see here for reference</a>).</li>
 </ul>
 <h2 id="tasks">Tasks</h2>
-<h3 id="coreconcept-namespace-deployments">CoreConcept: Namespace, Deployments</h3>
+<h3 id="core-concepts-namespace-deployments">Core Concepts: Namespace, Deployments</h3>
 <ol>
 <li>
 <p>Namespace</p>
@@ -693,7 +693,7 @@ Port: 80
 <p>Validation: Verify that the namespace, pod, deployment, and service have been created correctly.</p>
 </li>
 </ol>
-<h3 id="coreconcept-configmap-secrets">CoreConcept: ConfigMap, Secrets</h3>
+<h3 id="core-concepts-configmap-secrets">Core Concepts: ConfigMap, Secrets</h3>
 <ol>
 <li>
 <p>Create a ConfigMap</p>
@@ -757,14 +757,18 @@ Verify that the ConfigMap, Secret, and pods have been created and are functionin
 <li>
 <p>Creating Nodes with Labels</p>
 <p>Tasks:</p>
-<p>Label one of the existing nodes with <code>role=frontend</code>.</p>
-<p>Label another node with <code>role=backend</code>.</p>
+<pre><code>- Label one of the existing nodes with role=frontend.
+
+- Label another node with role=backend.
+</code></pre>
 </li>
 <li>
 <p>Deploying Pods Using Node Selectors</p>
 <p>Tasks:</p>
-<p>Create a pod that runs on the node labeled <code>role=frontend</code>.</p>
-<p>Create another pod that runs on the node <code>labeled role=backend</code>.</p>
+<pre><code>- Create a pod that runs on the node labeled role=frontend.
+
+- Create another pod that runs on the node labeled role=backend.
+</code></pre>
 </li>
 <li>
 <p>Use Taints and Tolerations</p>
@@ -789,8 +793,10 @@ Expose: port 80
 <li>
 <p>Perform an Update</p>
 <p>Tasks: </p>
-<p>Update the <code>nginx-deployment</code> to use the image <code>nginx:1.19</code>.</p>
-<p>Verify that the <code>update</code> is successful and <code>all pods</code> are updated.</p>
+<pre><code>- Update the nginx-deployment to use the image nginx:1.19.
+
+- Verify that the update is successful and all pods are updated.
+</code></pre>
 </li>
 <li>
 <p>Manage Application Configurations</p>
