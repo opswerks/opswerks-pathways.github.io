@@ -12,11 +12,9 @@
         <link rel="prev" href="../../lab/environment/">
       
       
-        <link rel="next" href="../../lab/environment/">
-      
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
     
     
       
@@ -24,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
@@ -66,13 +64,14 @@
     <body dir="ltr" data-md-color-scheme="opswerks" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#uhhh" class="md-skip">
+        <a href="#kubernetes-assessment" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +118,6 @@
     
     
     
-    
   </nav>
   
 </header>
@@ -162,7 +160,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../.." class="md-nav__link">
         
@@ -182,8 +179,6 @@
   
   
   
-  
-    
     
     
     
@@ -191,9 +186,10 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
-          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
@@ -217,7 +213,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../../pathways-linux/lab/environment/" class="md-nav__link">
         
@@ -235,7 +230,6 @@
             
               
                 
-  
   
   
   
@@ -266,8 +260,6 @@
   
   
   
-  
-    
     
     
     
@@ -275,9 +267,10 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
-          
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
@@ -301,7 +294,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../../pathways-docker/lab/environment/" class="md-nav__link">
         
@@ -319,7 +311,6 @@
             
               
                 
-  
   
   
   
@@ -352,8 +343,6 @@
     
   
   
-  
-    
     
     
     
@@ -361,9 +350,10 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
-          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
@@ -387,7 +377,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../lab/environment/" class="md-nav__link">
         
@@ -410,7 +399,6 @@
     
   
   
-  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -418,6 +406,17 @@
       
         
       
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Kubernetes Part 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -429,90 +428,80 @@
 
       </a>
       
-    </li>
-  
+        
 
-              
-            
-          </ul>
-        </nav>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-    </li>
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    Before you begin...
+  </a>
   
-
-    
+</li>
       
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    Tasks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
+    Core Concepts: Namespace, Deployments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
+    Core Concepts: ConfigMap, Secrets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling" class="md-nav__link">
+    Scheduling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-lifecycle-management" class="md-nav__link">
+    Application Lifecycle Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot-the-pod" class="md-nav__link">
+    Troubleshoot the pod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
+    </ul>
   
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
+</nav>
       
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Kubernetes
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Kubernetes
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab/environment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Lab Environment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kubernetes-part2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Kubernetes Part 2
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -547,6 +536,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    Before you begin...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    Tasks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
+    Core Concepts: Namespace, Deployments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
+    Core Concepts: ConfigMap, Secrets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling" class="md-nav__link">
+    Scheduling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-lifecycle-management" class="md-nav__link">
+    Application Lifecycle Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot-the-pod" class="md-nav__link">
+    Troubleshoot the pod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -560,18 +612,180 @@
                   
 
 
-<h1 id="uhhh">Uhhh...</h1>
-<p>I don't think you should be here...yet 😏 spend more time to review and do hands-on practices for now. We'll open this one soon!</p>
+<h1 id="kubernetes-assessment">Kubernetes Assessment</h1>
+<h2 id="before-you-begin">Before you begin...</h2>
+<ul>
+<li>Ensure with your instructor that your instance has been reset.</li>
+<li>Make sure you can login to your instance using your account and password (<a href="https://pathways-lab.opswerks.net/pathways-linux/lab/environment/">see here for reference</a>).</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<h3 id="core-concepts-namespace-deployments">Core Concepts: Namespace, Deployments</h3>
+<ol>
+<li>
+<p>Namespace</p>
+<p>Task: Create a new namespace called <code>pathways</code>.</p>
+</li>
+<li>
+<p>Deploy a Pod.</p>
+<p>Task: Create a pod in the <code>pathways</code> namespace with the following specifications:</p>
+<pre><code>Pod name: nginx-pod
 
+Image: nginx:latest
+</code></pre>
+</li>
+<li>
+<p>Create a Deployment</p>
+<p>Task: Create a deployment in the <code>pathways</code> namespace with the following specifications:</p>
+<pre><code>Deployment name: nginx-deployment
 
+Replicas: 3
 
+Image: nginx:latest
+</code></pre>
+</li>
+<li>
+<p>Expose the Deployment</p>
+<p>Task: Expose the <code>nginx-deployment</code> as a service with the following specifications:</p>
+<pre><code>Service name: nginx-service
 
+Type: ClusterIP
 
+Port: 80
+</code></pre>
+<p>Validation: Verify that the namespace, pod, deployment, and service have been created correctly.</p>
+</li>
+</ol>
+<h3 id="core-concepts-configmap-secrets">Core Concepts: ConfigMap, Secrets</h3>
+<ol>
+<li>
+<p>Create a ConfigMap</p>
+<p>Task: Create a <code>ConfigMap</code> in the <code>pathways</code> namespace with the following data:</p>
+<p>ConfigMap name: app-config</p>
+<pre><code>Data: app.properties: "key1=value1\nkey2=value2"
+</code></pre>
+</li>
+<li>
+<p>Create a Secret</p>
+<p>Task: Create a <code>Secret</code> in the <code>pathways</code> namespace with the following data:</p>
+<pre><code>Secret name: app-secret
 
+Data: username=admin
 
-  
-  
+Data: password=pathways2024
+</code></pre>
+</li>
+<li>
+<p>Deploy a Pod with <code>ConfigMap</code> and <code>Secret</code></p>
+<p>Task1: Create a <code>pod</code> in the <code>pathways</code> namespace with the following specifications:</p>
+<pre><code>Pod name: app-pod
 
+Image: nginx:latest
+</code></pre>
+<p>Task2: Mount the ConfigMap <code>app-config</code> as a volume at <code>/etc/config</code></p>
+<p>Use environment variables from the Secret app-secret:</p>
+<pre><code>ENV_USERNAME from username
+
+ENV_PASSWORD from password
+</code></pre>
+</li>
+<li>
+<p>Create a Multi-Container Pod</p>
+<p>Task:Create a pod in the <code>pathways</code> namespace with the following specifications:</p>
+<pre><code>Pod name: multi-pod
+
+First container:
+
+Name: nginx-container
+
+Image: nginx:latest
+
+Second container:
+
+Name: busybox-container
+
+Image: busybox:latest
+
+Command: ["/bin/sh", "-c", "echo Hello from Busybox; sleep 3600"]
+</code></pre>
+<p>Validations: </p>
+<pre><code>Ensure that both the ConfigMap and Secret are mounted as volumes in the pod app-pod.
+
+Verify that the ConfigMap, Secret, and pods have been created and are functioning correctly.
+</code></pre>
+</li>
+</ol>
+<h3 id="scheduling">Scheduling</h3>
+<ol>
+<li>
+<p>Creating Nodes with Labels</p>
+<p>Tasks:</p>
+<pre><code>- Label one of the existing nodes with role=frontend.
+
+- Label another node with role=backend.
+</code></pre>
+</li>
+<li>
+<p>Deploying Pods Using Node Selectors</p>
+<p>Tasks:</p>
+<pre><code>- Create a pod that runs on the node labeled role=frontend.
+
+- Create another pod that runs on the node labeled role=backend.
+</code></pre>
+</li>
+<li>
+<p>Use Taints and Tolerations</p>
+<p>Tasks:</p>
+<p>Taint a <code>node</code> with the key dedicated, value <code>frontend</code>, and effect <code>NoSchedule</code>.</p>
+<p>Deploy a <code>pod</code> that <code>tolerates the taint</code> applied to the node.</p>
+</li>
+</ol>
+<h3 id="application-lifecycle-management">Application Lifecycle Management</h3>
+<ol>
+<li>
+<p>Deploy an Application</p>
+<p>Tasks: Create a namespace named <code>opswerks</code>.</p>
+<p>Deploy a simple Nginx application using a Deployment named <code>nginx-deployment</code> in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>2 replicas
+
+Image: nginx:1.18
+
+Expose: port 80
+</code></pre>
+</li>
+<li>
+<p>Perform an Update</p>
+<p>Tasks: </p>
+<pre><code>- Update the nginx-deployment to use the image nginx:1.19.
+
+- Verify that the update is successful and all pods are updated.
+</code></pre>
+</li>
+<li>
+<p>Manage Application Configurations</p>
+<p>Tasks: Create a ConfigMap named nginx-config with the following configuration:</p>
+<pre><code>Key: index.html
+
+Value: A custom HTML content (e.g., Hello from OpsWerks! Pathways!)
+
+Update the nginx-deployment to use the nginx-config ConfigMap.
+
+Verify that the Nginx pods are using the configuration from the ConfigMap.
+</code></pre>
+</li>
+</ol>
+<h3 id="troubleshoot-the-pod">Troubleshoot the pod</h3>
+<ol>
+<li>
+<p>Scenario:
+    You are given a <code>pod</code> definition file that describes a simple web application. However, the pod is not running as expected. </p>
+<p>Your task is to diagnose and resolve the issue.</p>
+<pre><code>Tasks: Correct the pod definition file web-app.yaml in your home directory to ensure the pod runs successfully.
+</code></pre>
+<p>Note: Do not <code>delete</code> the existing <code>pod</code></p>
+<p>Validation: Ensure the pod is running and working correctly.</p>
+</li>
+</ol>
+<p>GOOD LUCK!</p>
 
 
 
@@ -584,7 +798,6 @@
             </div>
           
           
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -612,11 +825,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
-    
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
