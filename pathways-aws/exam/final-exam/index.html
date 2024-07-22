@@ -9,8 +9,6 @@
       
       
       
-        <link rel="prev" href="../../lab/environment/">
-      
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -18,7 +16,7 @@
     
     
       
-        <title>Prometheus Final Exam - OpsWerks Pathways</title>
+        <title>AWS Assessment - OpsWerks Pathways</title>
       
     
     
@@ -111,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prometheus-assessment" class="md-skip">
+        <a href="#aws-assessment" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prometheus Final Exam
+              AWS Assessment
             
           </span>
         </div>
@@ -850,19 +848,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -876,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Prometheus
@@ -890,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab/environment/" class="md-nav__link">
+      <a href="../../../pathways-prometheus/lab/environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -908,30 +904,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Prometheus Final Exam
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../pathways-prometheus/exam/final-exam/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,53 +916,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Before you begin...
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tasks
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1028,27 +957,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Before you begin...
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#tasks" class="md-nav__link">
     <span class="md-ellipsis">
       Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vpcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. VPCs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-internet-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Internet Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-route-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Route Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Security Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-s3-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. S3 Bucket
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-eks-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. EKS Cluster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-databases-rds-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Databases (RDS Instances)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Databases (RDS Instances)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mysql-database-for-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      MySQL Database for Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-database-for-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL Database for Production
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-ec2-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. EC2 Instances
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submit-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submit work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#total-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Total Points
     </span>
   </a>
   
@@ -1069,335 +1109,451 @@
                   
 
 
-<h1 id="prometheus-assessment">Prometheus Assessment</h1>
-<h2 id="before-you-begin">Before you begin...</h2>
-<ul>
-<li>Ensure with your instructor that your instance has been reset.</li>
-<li>Make sure you can login to your instance using your account and password (<a href="https://pathways-lab.opswerks.net/pathways-linux/lab/environment/">see here for reference</a>).</li>
-</ul>
+<h1 id="aws-assessment">AWS Assessment</h1>
+<!-- ## Before you begin...
+- Ensure with your instructor that your instance has been reset.
+- Make sure you can login to your instance using your account and password ([see here for reference](https://pathways-lab.opswerks.net/pathways-linux/lab/environment/)). -->
+
 <p><strong>Welcome, Site Reliability Engineer!</strong></p>
 <div class="admonition example">
-<p class="admonition-title">Prometheus Practical Lab Exam</p>
+<p class="admonition-title">AWS Practical Lab Exam</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4a1.svg" title=":bulb:" /> Scenario</label><label for="__tabbed_1_2"><img alt="💪" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4aa.svg" title=":muscle:" /> The Challenge</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.637 2.363h-.001l1.676.335c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.373 1.374a.876.876 0 0 1-.619.256H12.31L9.45 7.611A1.5 1.5 0 1 1 6.5 8a1.501 1.501 0 0 1 1.889-1.449l2.861-2.862V2.552c0-.232.092-.455.256-.619L12.88.559a.25.25 0 0 1 .249-.062c.089.026.155.1.173.19Z"/><path d="M2 8a6 6 0 1 0 11.769-1.656.751.751 0 1 1 1.442-.413 7.502 7.502 0 0 1-12.513 7.371A7.501 7.501 0 0 1 10.069.789a.75.75 0 0 1-.413 1.442A6.001 6.001 0 0 0 2 8Z"/><path d="M5 8a3.002 3.002 0 0 0 4.699 2.476 3 3 0 0 0 1.28-2.827.748.748 0 0 1 1.045-.782.75.75 0 0 1 .445.61A4.5 4.5 0 1 1 8.516 3.53a.75.75 0 1 1-.17 1.49A3 3 0 0 0 5 8Z"/></svg></span> Your Tasks</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>You are a newly hired SRE at TechPro Consulting, a leading technology consultancy firm. Your team has recently landed a significant contract with GlobalCorp, a "Fortune 500 company" to enhance their infrastructure monitoring capabilities.</p>
-<p>GlobalCorp operates a large-scale Kubernetes cluster for their mission-critical applications. Your task is to create a comprehensive Monitoring System that will provide real-time insights into the health and performance of their Kubernetes environment.</p>
+<p>You are a Site Reliability Engineer (SRE) newly hired by ProdWerks, a rapidly growing cloud consultancy firm. Your team has just secured a major contract with MacJolli-C Enterprises, a multinational corporation looking to migrate their development environment to AWS.</p>
+<p>MacJolli-C Enterprises has recently subscribed to AWS with the intention of migrating their e-commerce platform and associated services to the cloud. However, they lack in-house expertise in AWS technologies and best practices. As a result, they've entrusted your team (YOU) with a critical mission: to design, provision, and configure a comprehensive development environment in AWS for their Silver Team. This environment will serve as the foundation for their cloud migration efforts and future development work. Your task is to leverage AWS services to create a scalable, secure, and efficient infrastructure that aligns with MacJolli-C's business needs while following cloud best practices.</p>
 </div>
 <div class="tabbed-block">
-<p>Direct access to their Kubernetes production cluster is not permitted for external consultants due to GlobalCorp's stringent security policies. However, they have granted you access to their Prometheus instance which is already set up to scrape metrics from their Kubernetes cluster.</p>
-<p>Your mission is to leverage your PromQL expertise to craft queries that will form the foundation of the Grafana dashboard. These queries must extract meaningful insights from the available Kubernetes metrics without direct cluster access.</p>
+<p>You've been tasked with setting up a dedicated development environment for their Silver team. You have the necessary access to AWS to create this environment, which should mirror the production setup while allowing for experimentation and testing.</p>
+<p>Your mission is to leverage your expertise in AWS services and SRE practices to design and implement a new, robust development environment for the Silver team. You'll be responsible for creating the necessary AWS resources from scratch, ensuring they are scalable, secure, and optimized for development workflows. Your focus will be on setting up a solid foundation that enables efficient development processes and adheres to AWS best practices.</p>
 </div>
 <div class="tabbed-block">
-<p>You will be presented with a series of tasks that simulate the requirements for different panels in the Grafana dashboard in this lab exam. Each task will require you to write a PromQL query that retrieves specific Kubernetes metrics or calculates particular indicators of cluster health and performance.</p>
-<p>Your ability to construct efficient and accurate PromQL queries will be crucial in delivering a robust monitoring solution for GlobalCorp. This exam will test your skills in your understanding of PromQL's capabilities and your ability to think creatively within the constraints of using Prometheus as your sole data source.</p>
+<p>You will be presented with a series of tasks that simulate the process of setting up a comprehensive development environment in AWS for MacJolli-C Enterprises' Silver team. Each task will require you to create and configure specific AWS resources, focusing on the core services needed for their e-commerce platform. </p>
+</div>
+</div>
+</div>
+</div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Remember, the queries you craft today will directly impact GlobalCorp's ability to monitor and maintain their critical infrastructure. Good luck, and may your queries be ever insightful!</p>
-</div>
-</div>
-</div>
-</div>
+<p class="admonition-title">Prerequisites</p>
+<ul>
+<li>You will be using Kode Kloud's AWS Playground for this lab exam.</li>
+<li>Open <strong><a href="#" onClick="AWSWindow=window.open('https://kodekloud.com/playgrounds/playground-aws','AWSWindow','width=1200,height=800'); return false;">AWS KodeKloud Playground</a></strong> <em>(this will open a pop-up window)</em>.</li>
+<li>Log in to KodeKloud using your OpsWerks credentials.</li>
+<li>Click <strong><code>Launch Now</code></strong>.</li>
+<li>Click <strong><code>Start Lab</code></strong>.</li>
+<li>Take note of the provided <code>Console link</code>, <code>Username</code>, <code>Password</code>, and <code>Expiry Time</code>.</li>
+<li>Open the console link and enter the provided credentials.</li>
+<li>The lab exam time may be different from KodeKloud's expiry time. Please check with your lab proctor.</li>
+</ul>
 </div>
 <div class="admonition warning">
-<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 22a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3H6m-1-3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57l-2.29-3.96L14 17l-5.07-5.07-3.75 6.5c-.11.16-.18.36-.18.57m8-9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> Lab Rules</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6m7 1.5L18.5 9H13V3.5M12 11a3 3 0 0 1 3 3c0 1.88-2.25 2.06-2.25 3.75h-1.5c0-2.44 2.25-2.25 2.25-3.75a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0-1.5 1.5H9a3 3 0 0 1 3-3m-.75 7.5h1.5V20h-1.5v-1.5Z"/></svg></span> Query Creation</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 16.54 7.37-5.74L21 12.07l-9 7-9-7 1.62-1.26L12 16.54M12 14 3 7l9-7 9 7-9 7m0-11.47L6.26 7 12 11.47 17.74 7 12 2.53m0 18.94 7.37-5.74L21 17l-9 7-9-7 1.62-1.26L12 21.47"/></svg></span> Query Format</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16v-6H5l7-7 7 7h-4v6H9m-4 4v-2h14v2H5Z"/></svg></span> Answer Submission</label><label for="__tabbed_2_4"><img alt="🎗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f397.svg" title=":reminder_ribbon:" /> Key Reminders</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p class="admonition-title">Important</p>
 <ul>
-<li>Craft PromQL queries based on given tasks</li>
-<li>Use the Expression Browser on the Prometheus website to help you create and test queries</li>
-<li>Utilize only the provided metric name(s)</li>
+<li>Use the <strong>US East (N. Virginia)</strong> region <strong>(us-east-1)</strong> for <strong>ALL</strong> regional resources.</li>
+<li>Failure to use the correct region and/or zones will invalidate your answers.</li>
+<li>You can use the checkbox next to each task number to mark your completed tasks. However, these checkboxes are only a visual aid to help you track your progress.</li>
 </ul>
 </div>
-<div class="tabbed-block">
-<ul>
-<li>Validate queries using the Expression Browser</li>
-<li>Use correct spacing</li>
-<li>Use lowercase for metrics and functions consistently</li>
-<li>You are <strong>NOT</strong> allowed to include the character <code>|</code> (pipe) in any of your queries</li>
-</ul>
+<div class="admonition warning">
+<p class="admonition-title">MUST DO!</p>
+<p>As MacJolli-C Enterprises plans to expand its AWS usage across multiple teams, it's crucial to implement a robust resource tagging strategy from the outset. This practice will ensure proper resource management, cost allocation, and operational clarity as the company's cloud footprint grows.</p>
+<p><strong>For all resources you create, implement the following tagging scheme WHEREVER tagging is supported</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Key: <strong>"environment"</strong>, Value: <strong>"dev"</strong></p>
+<p>Key: <strong>"team"</strong>, Value: <strong>"silver"</strong></p>
 </div>
-<div class="tabbed-block">
-<ul>
-<li>Save each task answer in a file in your HOME directory:<ul>
-<li>Path: <code>/home/&lt;YOURNAME&gt;/promql/</code></li>
-<li>Filename: <code>t&lt;Task_Number&gt;</code> (e.g., <code>t6</code> for Task 6)</li>
-<li>Do not add file extensions</li>
-</ul>
-</li>
-<li>you can use <code>echo 'PROMQL_QUERY' &gt; &lt;FILENAME&gt;</code> to save your answer. i.e: <code>echo 'rate(http_requests_total[5m])' &gt; t1</code></li>
-</ul>
+<div class="admonition danger">
+<p class="admonition-title">Warning</p>
+<p><strong>By proceeding, you agree that you have read and understood all the instructions and rules of this lab exam.</strong></p>
 </div>
-<div class="tabbed-block">
-<ul>
-<li>Verify file location, naming convention and query syntax before submission</li>
-<li>Mind the quotation marks</li>
-<li>Each file should contain:<ul>
-<li>One PromQL query for the specific task</li>
-<li>Exactly one line per file only</li>
-</ul>
-</li>
-<li>Some tasks may have empty/null result</li>
-<li>Optional: View query results in either Table or Graph format</li>
-<li>Don't worry, you won't create any grafana dashboard.</li>
-<li>You can use the checkbox next to each task number to mark your completed tasks. However, these checkboxes are only a visual aid to help you track your progress. You must still follow the lab rules when submitting your answers.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h2 id="access"><img alt="🔑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f511.svg" title=":key:" /> Access</h2>
-<div class="admonition info">
-<p class="admonition-title">Prometheus Site</p>
-<p><strong>Open the Prometheus site: <a href="#" onClick="PromWindow=window.open('http://prometheus.pathways.opswerks.net','PromWindow','width=1200,height=800'); return false;">prometheus.pathways.opswerks.net</a></strong></p>
-<p>Note: <em>a window will pop-up</em></p>
 </div>
 <h2 id="tasks"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.857 18.013 11.736 24V12.456L1.857 6.468Zm20.286 0V6.468l-9.879 5.988V24Zm-.246-12.014L12 0 2.103 5.999 12 11.998Z"/></svg></span> Tasks</h2>
-<p>Number of tasks: 25
-Total points: 150 </p>
-<details class="warning">
-<summary>I have read ALL the lab rules above. <em>(click here)</em></summary>
+<!-- ??? warning "I've read and understood the scenario, prerequisites and notices. I'm ready to take the exam _(click here)_" -->
+
+<h3 id="1-vpcs">1. VPCs</h3>
 <div class="admonition abstract">
-<p class="admonition-title">Task 1 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get all the <code>namespace</code> using metric <code>kube_namespace_created</code> and <code>group by</code> function</p>
+<p class="admonition-title">1.1 Create a new VPC. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Your first task is to set up the foundational network infrastructure for their AWS development environment. Create a new VPC with the name <strong><code>dev</code></strong>, IPv4 CIDR block <strong><code>10.0.0.0/23</code></strong>, <strong><code>no</code></strong> IPv6 CIDR block, and ensure you apply the required tags.</p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t1
-</code></pre></div>
-<!-- !!! info "Explanation"
-    This query retrieves information about all namespaces. --></p>
+<!-- | **Property**          | **Value**        |
+    |-----------------------|------------------|
+    | Name Tag              | `dev`            |
+    | IPv4 CIDR block       | `10.0.0.0/23`    |
+    | IPv6 CIDR block       | `No`             |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver` | -->
+
 <div class="admonition abstract">
-<p class="admonition-title">Task 2 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the count of DEPLOYMENTS in the <code>prometheus</code> namespace using <code>kube_deployment_created</code> metric</p>
+<p class="admonition-title">1.2 Create a subnet within the <code>dev</code> VPC. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>You then need to establish a subnet within it for web services. Create a subnet named <strong><code>web-a</code></strong> with IPv4 CIDR block <strong><code>10.0.0.0/24</code></strong> in the Availability Zone <strong><code>us-east-1a</code></strong>, ensuring you apply the required tags. </p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t2
-</code></pre></div>
-<!-- !!! info "Explanation"
-    This query counts the number of deployments in the <code>prometheus</code> namespace by filtering the deployment labels with the specified namespace.* --></p>
+<!-- | **Property**          | **Value**        |
+    |-----------------------|------------------|
+    | Name                  | `web-a`          |
+    | IPv4 CIDR block       | `10.0.0.0/24`    |
+    | Availability Zone     | `us-east-1a`     |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver`| -->
+
 <div class="admonition abstract">
-<p class="admonition-title">Task 3 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the count of PODS in the <code>prometheus</code> namespace using the <code>kube_pod_info</code> metric</p>
+<p class="admonition-title">1.3 Create a second subnet within the <code>dev</code> VPC. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>To enhance availability and fault tolerance, create a second subnet within the <strong><code>dev</code></strong> VPC. This subnet should be named <strong><code>web-b</code></strong> with IPv4 CIDR block <strong><code>10.0.1.0/24</code></strong> in the Availability Zone <strong><code>us-east-1b</code></strong>.</p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t3
-</code></pre></div>
-<!-- !!! info "Explanation"
-    This query counts the number of pods in the <code>prometheus</code> namespace by filtering the pod information with the specified namespace. --></p>
+<!-- | **Property**          | **Value**        |
+    |-----------------------|------------------|
+    | Name                  | `web-b`          |
+    | IPv4 CIDR block       | `10.0.1.0/24`    |
+    | Availability Zone     | `us-east-1b`     |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver`| -->
+
+<h3 id="2-internet-gateway">2. Internet Gateway</h3>
 <div class="admonition abstract">
-<p class="admonition-title">Task4 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>List the <code>pods</code> in the <code>prometheus</code> namespace using <code>kube_pod_info</code> metric</p>
+<p class="admonition-title">2.1 Create an Internet Gateway and attach it to the <code>dev</code> VPC. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>To provide internet access for the <strong><code>dev</code></strong> VPC, create an Internet Gateway with the name <strong><code>dev-internet-gateway</code></strong>. Attach this Internet Gateway to the <strong><code>dev</code></strong> VPC you created earlier. </p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t4
-</code></pre></div>
-<!-- *Explanation: This query lists pods in the <code>prometheus</code> namespace using group by function.* --></p>
+<!-- | **Property**          | **Value**        |
+    |-----------------------|------------------|
+    | Name Tag              | `dev-internet-gateway` |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver` |
+    | Attach to             | `dev`            | -->
+
+<h3 id="3-route-table">3. Route Table</h3>
 <div class="admonition abstract">
-<p class="admonition-title">Task 5 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the count of Kubernetes nodes using the metric <code>kube_node_info</code></p>
+<p class="admonition-title">3.1 Create a route table, add a route to the Internet Gateway, and associate the route table with the 2 subnets (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>To enable internet connectivity for the web subnets, create a route table named <strong><code>internet-route</code></strong> within the <strong><code>dev</code></strong> VPC. Add a route to the Internet Gateway you created earlier, and associate this route table with both the <strong><code>web-a</code></strong> and <strong><code>web-b</code></strong> subnets. </p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t5
-</code></pre></div>
-<!-- *Explanation: This query counts the number of Kubernetes nodes.* --></p>
+<!-- | **Property**          | **Value**                          |
+    |-----------------------|------------------------------------|
+    | Name                  | `internet-route`                   | -->
+<!-- | Destination           | `0.0.0.0/0`                        |
+    | Target                | `internet-route` Internet Gateway  | -->
+
 <div class="admonition abstract">
-<p class="admonition-title">Task 6 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the count of deployments in the <code>ingress-nginx</code> namespace using the metric <code>kube_deployment_created</code></p>
+<p class="admonition-title">3.2 Modify the 2 subnets to enable auto-assign public IP. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Now we need to make sure that our web subnets will have IPv4 Public IPs assigned to the instances that will be created in those subnets. </p>
 </div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t6
-</code></pre></div>
-<!-- *Explanation: This query gets the count  of deployments in the <code>ingress-nginx</code> namespace by filtering the deployment labels with the specified namespace.* --></p>
+<!-- | Auto-assign public  IPv4 address  | `Yes`                  | -->
+
+<h3 id="4-security-group">4. Security Group</h3>
 <div class="admonition abstract">
-<p class="admonition-title">Task 7 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the count of pods in the <code>ingress-nginx</code> namespace using <code>kube_pod_info</code> metric</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t7
-</code></pre></div>
-<!-- *Explanation: This query counts the number of pods in the <code>ingress-nginx</code> namespace by filtering the pod information with the specified namespace.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 8 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the list of pods in the <code>ingress-nginx</code> namespace using the metric <code>kube_pod_info</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t8
-</code></pre></div>
-<!-- *Explanation: This query lists the pods in the <code>ingress-nginx</code> namespace using group by function* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 9 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the <code>memory</code> resource limit of Pods in the node <code>kind-worker</code> using metric <code>kube_pod_container_resource_limits</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t9
-</code></pre></div>
-<!-- *Explanation: This query retrieves the memory requests limit for pods in the node kind-worker* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 10 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Sort <code>memory</code> requests in <code>descending</code> order using <code>kube_pod_container_resource_requests</code> metric</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t10
-</code></pre></div>
-<!-- *Explanation: This query sorts the memory requests for all pods in descending order.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 11 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Sort <code>cpu</code> requests in <code>descending</code> order using <code>kube_pod_container_resource_requests</code> metric</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t11
-</code></pre></div>
-<!-- *Explanation: This query sorts the cpu requests for all pods in descending order.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 12 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Sort <code>memory</code> requests in <code>ascending</code> order using <code>kube_pod_container_resource_requests</code> metric</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t12
-</code></pre></div>
-<!-- *Explanation: This query sorts the memory requests for all pods in ascending order.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 13 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Sort <code>cpu</code> requests in <code>ascending</code> order using <code>kube_pod_container_resource_requests</code> metric</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t13
-</code></pre></div>
-<em>Explanation: This query sorts the cpu requests for all pods in ascending order.</em></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 14 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Return <em>ALL</em> pods <code>starting</code> with <code>ingress-</code> from <code>ALL</code> namespaces using metric name <code>kube_pod_info</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Medium
-Points: 10
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t14
-</code></pre></div>
-<!-- *Explanation: This query matches pods with names starting with 'ingress-' using a regex matcher.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 15 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Return <em>ALL</em> pods <code>starting</code> with <code>ingress-</code> in the <code>prometheus</code> namespace using metric name <code>kube_pod_info</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Medium
-Points: 10
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t15
-</code></pre></div>
-<!-- *Explanation: This query matches pods with names starting with 'ingress-' using a regex matcher.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 16 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get <em>ALL</em> Pods either in <code>Running</code> <em>OR</em> <code>Pending</code> state using metric <code>kube_pod_status_phase</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t16
-</code></pre></div>
-<em>Explanation: This query returns pods that are either running or pending.</em></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 17 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get <em>ALL</em> Pods in <code>Running</code> phase <code>UNLESS</code> it is in <code>Failed</code> phase using metric <code>kube_pod_status_phase</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t17
-</code></pre></div>
-<!-- *Explanation: This query returns pods that are running unless they are failed.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 18 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get ALL container with memory usage more than 536870912 <em>(512MiB)</em> using metric <code>container_memory_usage_bytes</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t18
-</code></pre></div>
-<!-- *Explanation: This query returns pods using more than 512 MiB of memory.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 19 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Convert <code>container_memory_usage_bytes</code> in bytes to kibibyte, 1KiB = 1024bytes</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t19
-</code></pre></div>
-<!-- *Explanation: This query divides memory requests for all pods by 1024 to convert bytes to kibibyte.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 20 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the Instant rate of <code>container_cpu_user_seconds_total</code> of the <code>ingress-nginx</code> namespace over the last <code>5 minutes</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t20
-</code></pre></div>
-<!-- *Explanation: This query calculates the per-second rate of increase of CPU usage over the last minute.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 21 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the <code>absolute</code> value of resource type <code>memory</code> of <code>kube_pod_container_resource_limits</code> less (minus) <code>memory</code> of <code>kube_pod_container_resource_requests</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Medium
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t21
-</code></pre></div>
-<!-- *Explanation: This query calculates the absolute difference between memory limits and requests.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 22 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Retrieve the <code>container_cpu_usage_seconds_total</code> of namespace <code>prometheus</code> offset for <code>1 hour</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t22
-</code></pre></div>
-<!-- *Explanation: This query retrieves CPU usage seconds for pods in prometheus namespace with a 5-minute offset.* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 23 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Return the current time</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Super Easy
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t23
-</code></pre></div>
-<!-- *Explanation: This function returns the time* --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 24 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Execute the up command</p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Giveaway
-Points: 5
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t24
-</code></pre></div>
-<!-- *Explanation: Up command --></p>
-<div class="admonition abstract">
-<p class="admonition-title">Task 25 <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 165); }"></p>
-<p>Get the 99th percentile of <code>prometheus_http_request_duration_seconds_bucket</code> over the last <code>5 minutes</code> by <code>le</code> Tip: You must <code>sum</code> the <code>rate</code></p>
-</div>
-<p><div class="highlight"><pre><span></span><code>Level: Hard
-Points: 15
-Answer filename: /home/&lt;YOURNAME&gt;/promql/t25
-</code></pre></div>
-<!-- *Explanation: This query calculates the 99th percentile of HTTP Prometheus request durations over 5 minutes.* --></p>
+<p class="admonition-title">4.1 Create Security Group (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>After setting up the network infrastructure, create a Security Group named <strong><code>allow-http</code></strong> with a description of <strong><code>Allows HTTP traffic</code></strong>, within the <strong><code>dev</code></strong> VPC. This Security Group should <strong><code>allow all inbound HTTP traffic</code></strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Double check your work before logging out.</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+</ul>
 </div>
-<details class="success">
-<summary>Im done! <em>(click here when done)</em></summary>
-<p>"Congratulations on completing the PromQL practical exam! Your work today demonstrates the crucial skills needed in your role as an SRE at TechPro Consulting. The queries you've crafted will form the foundation of GlobalCorp's new Kubernetes monitoring dashboard, providing them with invaluable insights into their infrastructure.</p>
-<p>Remember, while you didn't have direct access to GlobalCorp's Kubernetes cluster, your PromQL expertise has allowed you to extract meaningful data and create a powerful monitoring solution. This showcases the importance of leveraging tools like Prometheus effectively in real-world scenarios with security constraints.</p>
-<p>Your ability to think creatively and construct efficient queries under these conditions is exactly what makes a great SRE. The work you've done today will have a direct impact on GlobalCorp's ability to maintain and optimize their critical infrastructure.</p>
-<p>Thank you for your hard work and ingenuity."</p>
+</div>
+<!-- Allow Inbound HTTP traffic and BLOCK ALL Outbound traffic from any one.
+    | **Property**          | **Value**                |
+    |-----------------------|--------------------------|
+    | Security Group Name   | `allow-http`             |
+    | Description           | `Allows HTTP traffic`    |
+    | VPC                   | `dev`                    |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver` | -->
+
+<!-- | Inbound Rule          | Type: `HTTP`<br>Source: `Anywhere-IPv4` |
+    | Outbound Rule         | NONE | -->
+
+<div class="admonition abstract">
+<p class="admonition-title">4.2 Create 2nd Security Group (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Make another security group, this time name it <strong><code>allow-https</code></strong> with the description <strong><code>Allows HTTPS traffic</code></strong>, configure it to <strong><code>allow all inbound HTTPS traffic</code></strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+</ul>
+</div>
+</div>
+<!--     
+    Allow Inbound HTTPS traffic and ALL Outbound traffic from any one.
+
+    | **Property**          | **Value**                |
+    |-----------------------|--------------------------|
+    | Security Group Name   | `allow-https`            |
+    | Description           | `Allows HTTPS traffic`   |
+    | VPC                   | `dev`                    |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver` |     -->
+<!-- | Inbound Rule          | Type: `HTTPS`<br>Source: `Anywhere-IPv4` |
+    | Outbound Rule         | Type: `All traffic`<br>Destination: `Anywhere-IPv4` | -->
+
+<h3 id="5-s3-bucket">5. S3 Bucket</h3>
+<div class="admonition abstract">
+<p class="admonition-title">5.1 Create an S3 bucket  zone. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Silver team's e-commerce group headed by Park Soo Min needs to a place store a lot of digital content.
+Create an S3 bucket for storage with the name <strong><code>kodekloud-ow-pathways-[YOURNAME]-[MMDDYYY]-b1</code></strong>.
+<!-- | **Property**          | **Value**                                         |
+|-----------------------|---------------------------------------------------|
+| Bucket Name           | <code>kodekloud-ow-pathways-[YOURNAME]-[MMDDYYY]-b1</code>   |
+| Tags                  | <code>environment</code> = <code>dev</code><br><code>team</code> = <code>silver</code>        |     --></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>MMDDYYYY = Month Day Year </li>
+<li>YOURNAME = firstname initial and then your lastname in lower case letters.</li>
+</ul>
+</div>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">5.2 Upload file. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>She also wants you to test the upload to make sure that the storage solution you provided is working.
+Prepare <strong><code>any</code></strong> <strong><code>PNG image</code></strong> under <strong><code>5MB</code></strong> from the internet and name it as <strong><code>picture.png</code></strong> and upload to the newly created S3 bucket.</p>
+</div>
+<!-- 
+    | **Property**          | **Value**      |
+    |-----------------------|----------------|
+    | File   Name           | `picture.png`  |
+    | Format                | `PNG`          |
+    | Size                  | `< 5Mb`        |     -->
+
+<div class="admonition abstract">
+<p class="admonition-title">5.3 Create a second S3 bucket. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>News of the storage solution you provided to Park's team reached her fellow group lead, Juan, and he also wants a storage solution for him and his group. 
+Create another bucket and name it <strong><code>kodekloud-ow-pathways-[YOURNAME]-[MMDDYYY]-b2</code></strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>MMDDYYYY = Month Day Year </li>
+<li>YOURNAME = firstname initial and then your lastname in lower case letters.</li>
+</ul>
+</div>
+</div>
+<!-- 
+    | **Property**          | **Value**                                         |
+    |-----------------------|---------------------------------------------------|
+    | Bucket Name           | `kodekloud-ow-pathways-[YOURNAME]-[MMDDYYY]-b2`   |
+    | Tags                  | `environment` = `dev`<br>`team` = `silver`        |    
+    | Bucket Versioning     | `Enable`        |     -->
+
+<div class="admonition abstract">
+<p class="admonition-title">5.4 Enable versioning on the 2nd S3 bucket you just created. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Their files gets updated every now and then so he needs a storage solution that can track file versions.</p>
+</div>
+<h3 id="6-eks-cluster">6. EKS Cluster</h3>
+<div class="admonition abstract">
+<p class="admonition-title">6.1 Create an EKS Cluster (15 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Dmitri and Olga from the Silver Team will also be working with containers. They need an EKS cluster named <strong><code>dev-playground</code></strong> with Kubernetes version <strong><code>1.29</code></strong>. Create a role for the cluster with the following specifications: AWS Service set to <strong><code>EKS</code></strong>, Use Case set to <strong><code>EKS-Cluster</code></strong>, and Role Name as <strong><code>eksClusterRole</code></strong>. Ensure the cluster is associated with the <strong><code>dev</code></strong> VPC and uses the <strong><code>web-a</code></strong> and <strong><code>web-b</code></strong> subnets.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+<li>You can complete other tasks while waiting for the resource to finish creating.</li>
+<li>Make sure you verify all tasks are complete/ready before submitting </li>
+</ul>
+</div>
+</div>
+<!-- | **Property**           | **Value**                                                                 |
+    |------------------------|---------------------------------------------------------------------------|
+    | Cluster Name           | `dev-playground`                                                          |
+    | Kubernetes Version     | `1.29`                                                                    |
+    | Cluster Service Role   | Create a role in IAM Console<br>- AWS Service: `EKS`<br>- Use Case: `EKS-Cluster`<br>- Role Name: `eksClusterRole` |
+    | VPC                    | `dev`                                                                     |
+    | Subnets                | `web-a`<br>`web-b`                                                        | -->
+<div class="admonition abstract">
+<p class="admonition-title">6.2 Configure kubectl (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Make sure you can connect to the eks server. </p>
+</div>
+<h3 id="7-databases-rds-instances">7. Databases (RDS Instances)</h3>
+<h4 id="mysql-database-for-development">MySQL Database for Development</h4>
+<div class="admonition abstract">
+<p class="admonition-title">7.1 Launch a new RDS instance using MySQL. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Ishaan is familiar working with MySQL database. He is requesting that you provision a managed mysql database for his team.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engine</td>
+<td><code>MySQL</code></td>
+</tr>
+<tr>
+<td>Engine Version</td>
+<td><code>8.0.37</code></td>
+</tr>
+<tr>
+<td>Templates</td>
+<td><code>Free Tier</code></td>
+</tr>
+<tr>
+<td>DB instance identifier</td>
+<td><code>dev-mysql-db</code></td>
+</tr>
+<tr>
+<td>Master username</td>
+<td><code>pathways_admin</code></td>
+</tr>
+<tr>
+<td>Master password</td>
+<td><code>#An2qG8vCH2QGVrWffu3Cb&amp;$</code></td>
+</tr>
+<tr>
+<td>DB instance class</td>
+<td><code>db.t3.micro</code></td>
+</tr>
+<tr>
+<td>Storage</td>
+<td><code>Gp2 20GiB</code></td>
+</tr>
+<tr>
+<td>VPC</td>
+<td><code>dev</code></td>
+</tr>
+<tr>
+<td>Public accessibility</td>
+<td><code>No</code></td>
+</tr>
+<tr>
+<td>VPC Security Group</td>
+<td><code>default</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+<li>You can complete other tasks while waiting for the resource to finish creating.</li>
+<li>Make sure you verify all tasks are complete/ready before submitting </li>
+</ul>
+</div>
+</div>
+<!-- | Tags                        | `environment` = `dev`<br>`team` = `silver` | -->
+
+<h4 id="postgresql-database-for-production">PostgreSQL Database for Production</h4>
+<div class="admonition abstract">
+<p class="admonition-title">7.2 Launch a new RDS instance using PostgreSQL. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Aadhya and Keshav, developers from the silver team wants to experiment using <code>PostgreSQL</code> instead of MySQL. They had previous experience using Postgres but are not confident in managing the database server. Provision a managed <code>PostgreSQL</code> server for them.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engine</td>
+<td><code>PostgreSQL</code></td>
+</tr>
+<tr>
+<td>Engine Version</td>
+<td><code>16.3-R2</code></td>
+</tr>
+<tr>
+<td>Templates</td>
+<td><code>Free Tier</code></td>
+</tr>
+<tr>
+<td>DB instance identifier</td>
+<td><code>dev-postgres-db</code></td>
+</tr>
+<tr>
+<td>Master username</td>
+<td><code>pathways_admin</code></td>
+</tr>
+<tr>
+<td>Master password</td>
+<td><code>LQ6*kCCCG4gbUBECc$54MKYSZ</code></td>
+</tr>
+<tr>
+<td>DB instance class</td>
+<td><code>db.t3.micro</code></td>
+</tr>
+<tr>
+<td>Storage</td>
+<td><code>Gp2 20GiB</code></td>
+</tr>
+<tr>
+<td>VPC</td>
+<td><code>dev</code></td>
+</tr>
+<tr>
+<td>Public accessibility</td>
+<td><code>No</code></td>
+</tr>
+<tr>
+<td>VPC Security Group</td>
+<td><code>default</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+<li>You can complete other tasks while waiting for the resource to finish creating.</li>
+<li>Make sure you verify all tasks are complete/ready before submitting </li>
+</ul>
+</div>
+</div>
+<!-- | Tags                        | `environment` = `dev`<br>`team` = `silver` | -->
+
+<h3 id="8-ec2-instances">8. EC2 Instances</h3>
+<div class="admonition abstract">
+<p class="admonition-title">8.1 Launch a t2.micro EC2 instance using the Amazon Linux 2 AMI. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Create an EC2 instance using <strong><code>Amazon Linux 2023 AMI ami-0b72821e2f351e396</code></strong> and name it as <strong><code>Web-1</code></strong> using <strong><code>t2.micro</code></strong> <strong><code>x86</code></strong> instance type. Deploy it in <strong><code>web-a</code></strong> subnet and make sure <strong><code>anyone</code></strong> can connect to it via <strong><code>HTTP</code></strong>. No need to create a key pair for now. Utilize whatever security resource is available instead of creating new ones.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+<li>You can complete other tasks while waiting for the resource to finish creating.</li>
+<li>Make sure you verify all tasks are complete/ready before submitting </li>
+</ul>
+</div>
+</div>
+<!-- | **Property**               | **Value**                           |
+    |----------------------------|-------------------------------------|
+    | Instance Name              | `Web-1`                             |
+    | AMI                        | `Amazon Linux 2023 AMI - ami-06c68f701d8090592` |
+    | Architecture               | `x86`                               |
+    | Instance type              | `t2.micro`                          |
+    | VPC                        | `dev`                               |
+    | Subnet                     | `web-a`                             |
+    | Auto-assign Public IP      | `Enable`                            |
+    | Security Group             | `allow-http`                        |
+    | Key pair                   | `None`                              |-->
+
+<div class="admonition abstract">
+<p class="admonition-title">8.2 Launch a new t2.micro EC2 instance using the Ubuntu 22.04 AMI. (5 points) <input type="checkbox" name="uchk" onclick="if(this.checked) { window.scrollBy(0, 120); }"></p>
+<p>Alice from the silver team is more familiar with Ubuntu compared to Amazon Linux. Create an EC2 instance for Alice using <strong><code>Ubuntu 22.04 AMI ami-0a0e5d9c7acc336f1</code></strong> and name it as <strong><code>Web-2</code></strong> using <strong><code>t2.medium</code></strong> instance type. Deploy it in <strong><code>web-b</code></strong> subnet and make sure <strong><code>anyone</code></strong> can connect to it via <strong><code>HTTPS instead of HTTP</code></strong>. No need to create a key pair for now. Utilize whatever security resource is available instead of creating new ones.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Leave the rest of the settings as they are.</li>
+<li>You can complete other tasks while waiting for the resource to finish creating.</li>
+<li>Make sure you verify all tasks are complete/ready before submitting </li>
+</ul>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Done? Make sure you double check all instances/resources are in ready state! before you submit your work.</strong></p>
+</div>
+<h2 id="submit-work">Submit work</h2>
+<details class="danger">
+<summary>Click here ONLY after you have completed all tasks.</summary>
+<p>Once you have created all the required resources and ensured that they are in a ready state, follow these steps:</p>
+<ol>
+<li>Contact the Exam Proctor: Inform them that you have completed the resource creation.</li>
+<li>Open AWS Console Cloud Shell: Launch the Cloud Shell from the AWS Management Console.</li>
+<li>Execute the Commands: Run the commands provided below in the Cloud Shell. Make sure to follow any additional instructions carefully.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w"> </span>https://aws-assessment-resources.ap-south-1.linodeobjects.com/aws-checker
+chmod<span class="w"> </span>+x<span class="w"> </span>aws-checker
+./aws-checker
+</code></pre></div>
 </details>
-</details>
+<h2 id="conclusion">Conclusion</h2>
+<div class="admonition success">
+<p class="admonition-title">Congratulations!</p>
+<p>This lab exam has tested you through the practical use of various AWS services and concepts. You have set up a development environment with isolated VPCs,security group, routes, internet gateway, EC2 instances, EKS Cluster, S3 storage, and both MySQL and PostgreSQL RDS instances. Ensure you understand each step and the purpose of each AWS service used. This lab exam simulates a real-world scenario where you need to create a secure and scalable environment for a new application.</p>
+</div>
+<h2 id="total-points">Total Points</h2>
+<p>Total points for completing all steps: 100 points</p>
 
 
 
