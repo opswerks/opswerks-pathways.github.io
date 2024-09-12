@@ -113,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#splunk-practice-exercises" class="md-skip">
+        <a href="#uhhh" class="md-skip">
           Skip to content
         </a>
       
@@ -985,17 +985,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Splunk Exercise
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1005,76 +994,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#directions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Directions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Directions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#log-in-to-the-splunk-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Log in to the Splunk Instance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#search-and-reporting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Search and Reporting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dashboarding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dashboarding
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final Output
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1215,65 +1134,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#directions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Directions:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Directions:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#log-in-to-the-splunk-instance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Log in to the Splunk Instance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#search-and-reporting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Search and Reporting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dashboarding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dashboarding
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final Output
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1287,156 +1147,8 @@
                   
 
 
-<h1 id="splunk-practice-exercises">Splunk Practice Exercises</h1>
-<ul>
-<li>Welcome to your Splunk Practice Exercise. As you dive in to the Splunk Modules, you may use this practice questions as a guide to test your learnings. Follow the instructions below to complete the practice exercise. This will serve as a guide for the upcoming Splunk Practical Assessment.</li>
-</ul>
-<h2 id="directions">Directions:</h2>
-<h3 id="log-in-to-the-splunk-instance">Log in to the Splunk Instance</h3>
-<ul>
-<li>Access the Splunk instance at the following URL: <strong><a href="#" onClick="SplunkWindow=window.open('https://splunk.pave.opswerks.net:8000','SplunkWindow','width=1200,height=800'); return false;">Splunk Practical Assessment</a></strong>. Username and password will be provided by the proctor.</li>
-</ul>
-<h2 id="search-and-reporting">Search and Reporting</h2>
-<ul>
-<li>Instructions: Use the Search and Reporting app to answer the following questions. The index name is "olympic_data" and the source type is "oly_src". The time-range will be "All time". Create and run the necessary SPL (Search Processing Language) queries to find the required data. Verify your answers using the provided solutions.</li>
-</ul>
-<div class="admonition abstract">
-<p class="admonition-title">Find all events that took place in the country of Japan <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" country="Japan" </p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Find all events from the year 2024 <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" date_year=2024 </p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Extract and display the athlete and medal fields for all events <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" 
-| table athlete, medal</p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Calculate the average age of athletes for each sport. <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" 
-| stats avg(age) as avg_age by sport</p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Find all female athletes who won a gold medal. <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" gender="female" medal="gold"</p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Create a bar chart showing the number of medals won by each country. <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" 
-| stats count by country, medal 
-| chart sum(count) by country</p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Find the average weight of athletes who participated in Swimming" events and group the results by gender. <input type="checkbox" name="uchk"></p>
-<details class="note">
-<summary>Show Answer</summary>
-<p>index="olympic_data" sourcetype="oly_src" sport="Swimming" 
-| stats avg(weight) as avg_weight by gender</p>
-</details>
-</div>
-<h2 id="dashboarding">Dashboarding</h2>
-<ul>
-<li>The series of steps on how to create a dashboard in Splunk is shown below. This will serve as your guide in creating dashboard for your final output.</li>
-</ul>
-<div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<details class="note">
-<summary>From Search and Reporting App, click dashboards</summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-1.png" /></p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<details class="note">
-<summary>From the dashboards tab, click "Create New dashboard" </summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-2.png" /></p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<details class="note">
-<summary>From the panel, you can use any name for the dashboard title. For the permission, it must be "Shared in App". You must also choose dashboard studio with absolute layout.</summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-3.png" /></p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<details class="note">
-<summary>After creating, you'll be directed to the landing page. From there you can select the visualization tool that you'll be using.</summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-4.png" /></p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<details class="note">
-<summary>Once the visualization tool has been selected, you must add your query by clicking " + Create search". </summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-5.png" /></p>
-</details>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
-<details class="note">
-<summary>Lastly, add your query on the search bar on the top right and click save. </summary>
-<p><img alt="" src="../../pathways-splunk-files/praclab-6.png" /></p>
-</details>
-</div>
-<h2 id="final-output">Final Output</h2>
-<ul>
-<li>Direction: From your results above, you are tasked to use the following visualizations in representing your answers. </li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p><strong>This is not graded. It will just serve as your guide for your upcoming practical assessment.</strong></p>
-</div>
-<blockquote>
-<ol>
-<li>
-<p>Table - Find all events that took place in the  country of Japan</p>
-</li>
-<li>
-<p>Events - Find all events from the year 2024 </p>
-</li>
-<li>
-<p>Parallel Coordinates - Extract and display the athlete and medal fields for all events </p>
-</li>
-<li>
-<p>Bar - Calculate the average age of athletes for each sport.</p>
-</li>
-<li>
-<p>Events - Find all female athletes who won a gold medal.</p>
-</li>
-<li>
-<p>Bar - Create a bar chart showing the number of medals won by each country.</p>
-</li>
-<li>
-<p>Column - Find the average weight of athletes who participated in Swimming" events and group the results by gender.</p>
-</li>
-</ol>
-</blockquote>
-<ul>
-<li><strong>Your final output should look like this:</strong></li>
-</ul>
-<p><img alt="" src="../praclab-final.png" /></p>
+<h1 id="uhhh">Uhhh...</h1>
+<p>I don't think you should be here...yet 😏 spend more time to review and do hands-on practices for now. We'll open this one soon!</p>
 
 
 
