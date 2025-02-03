@@ -16,7 +16,7 @@
     
     
       
-        <title>Uhhh... - OpsWerks Pathways</title>
+        <title>Lab exam part1 - OpsWerks Pathways</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uhhh" class="md-skip">
+        <a href="#linux-administration-practical-assessment-part-1" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Uhhh...
+              Lab exam part1
             
           </span>
         </div>
@@ -1115,8 +1115,77 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux-administration-practical-assessment-part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux Administration Practical Assessment Part 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before you begin...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-essential-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Essential Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-bash-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: BASH Scripting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-operate-running-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Operate Running Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-configure-local-storage-and-filesystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Configure Local Storage and Filesystems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1131,8 +1200,90 @@
                   
 
 
-<h1 id="uhhh">Uhhh...</h1>
-<p>I don't think you should be here...yet 😏 spend more time to review and do hands-on practices for now. We'll open this one soon!</p>
+  <h1>Lab exam part1</h1>
+
+<!---
+Lab Setup Requirements:
+- additional disk for /dev/sdb
+- install and run atd
+-->
+
+<h2 id="linux-administration-practical-assessment-part-1">Linux Administration Practical Assessment Part 1</h2>
+<h2 id="before-you-begin">Before you begin...</h2>
+<ul>
+<li>Make sure you can login to your instance using your account and password (see here for reference) </li>
+<li><strong>Note: Your instances will be rebooted after you have taken your exam</strong></li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<h2 id="task-1-essential-tools">Task 1: Essential Tools</h2>
+<ol>
+<li>(10 pts) Create a new user <code>student</code> with the home directory <code>/home/student</code>.  </li>
+<li>(10 pts) Create a copy of <code>/etc/dnf/dnf.conf</code> and save it in <code>/home/student/documents/projects/project1.txt</code>. Then, create a copy of <code>/etc/ssh/sshd_config</code> and name it <code>/home/student/documents/projects/project2.txt</code> </li>
+<li>(10 pts) Create a hard link to the file <code>/home/student/documents/projects/project1.txt</code> in the <code>/home/student/links</code> directory, named <code>project1-hardlink.txt</code>. Then, create a soft link to the same file in the <code>/home/student/links</code> directory named <code>project1-softlink.txt</code>. </li>
+<li>
+<p>(20 pts) Set the following permissions: </p>
+<ul>
+<li><code>/home/student/documents/projects/project1.txt</code> should be <code>readable</code> and <code>writable</code> by the <code>owner</code>, <code>readable</code> by the <code>group</code>, and <code>not accessible</code> by <code>others</code> </li>
+<li>Set the <code>SUID</code> bit on the file <code>/home/student/documents/projects/project2.txt</code> </li>
+<li>Set the <code>SGID</code> bit on the directory <code>/home/student/documents</code></li>
+<li>Set the <code>sticky bit</code> on the directory <code>/home/student/documents/projects</code></li>
+</ul>
+</li>
+<li>
+<p>(10 pts) Search for all files with a filename ending with <code>.conf</code> in the <code>/etc</code> directory and save the list of these files to<code>/home/student/conf_files.txt</code>. Then, find all occurrences of the word <code>"network"</code> in these files and save the results to <code>/home/student/network_mentions.txt</code>. </p>
+</li>
+</ol>
+<h2 id="task-2-bash-scripting">Task 2: BASH Scripting</h2>
+<ol>
+<li>(15 pts) Write a shell script named <code>/home/student/backup_home.sh</code> that automates the process of creating a backup of the <code>/var</code> directory. The script should: <ul>
+<li>Create a <code>tarball</code> of the <code>/var</code> directory with a filename that includes the <code>current date</code>. The following filename format must be followed: <code>/home/student/var_backup_YYYYMMDD.tar.gz</code> (e.g. <code>var_backup_20240128.tar.gz</code>) </li>
+<li>If the backup was successful, print a message <code>“Backup successful”</code>. </li>
+<li>Here’s how it should look like when executed, and if you list the files under student’s home dir: 
+<div class="highlight"><pre><span></span><code>$ /home/student/backup_home.sh 
+              Backup successful 
+              $ ls /home/student/var_backup_* 
+              var_backup_20240729 
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>(15 pts) Create a shell script named <code>/home/student/user_check.sh</code> that checks if a given username <code>(passed as an argument)</code> exists on the system. The script should: </p>
+<ul>
+<li>Print a message indicating whether the user exists or not: <code>“User exists”</code> / <code>“User does not exist”</code> </li>
+<li>The script’s exit status must be <code>0</code> if the user exists, and the exit status must be <code>127</code> if the user does not exist </li>
+<li>Here’s how it should look like when executed: 
+<div class="highlight"><pre><span></span><code>$ /home/student/user_check.sh root 
+User exists 
+$ echo $? 
+0 
+$ /home/student/user_check.sh nonexistentuser 
+User does not exist 
+$ echo $? 
+127 
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>(15 pts) Write a shell script named <code>/home/student/disk_usage.sh</code> that processes disk usage information of the <code>/boot</code> directory. The script should: </p>
+<ul>
+<li>Print the disk usage of each subdirectory within <code>/boot</code> in <code>human-readable</code> format </li>
+<li>Sort the output ascendingly by directory size, starting from the directory with the smallest disk usage up to the directory with the largest disk usage </li>
+<li>Lastly, the script must save the output of the disk usage information to a file named <code>/home/student/disk_usage_report.txt</code> </li>
+</ul>
+</li>
+</ol>
+<h2 id="task-3-operate-running-systems">Task 3: Operate Running Systems</h2>
+<ol>
+<li>(10 pts) Spawn a <code>sleep 100000</code> process that should be running in the background. The process must still be running in the background even if you log out your session. Then, make sure its niceness is set to <code>–10</code>. </li>
+</ol>
+<h2 id="task-4-configure-local-storage-and-filesystems">Task 4: Configure Local Storage and Filesystems</h2>
+<ol>
+<li>(5 pts) Create a partition in <code>/dev/sdb</code> with a size of <code>128MB</code>  </li>
+<li>(10 pts) Format <code>/dev/sdb1</code> to <code>ext4</code> and mount it to <code>/mnt/data</code>. Ensure that the mount is persistent and will be mounted during system bootup. </li>
+<li>(5 pts) Create two more partitions in <code>/dev/sdb</code> with a size of 64MB each </li>
+<li>(10 pts) Create a software RAID group (RAID1) out of <code>/dev/sdb2</code> and <code>/dev/sdb3</code>. Format the resulting RAID group in <code>xfs</code> and mount it to <code>/mnt/raid1</code>. Ensure that the mount is persistent and will be mounted during system bootup. </li>
+<li>(20 pts) Create one more partition in <code>/dev/sdb</code> with a size of <code>128MB</code>. Ensure that partition <code>/dev/sdb4</code> is using the <code>Linux LVM partition</code> type. Create a physical volume out of it, then create volume group called <code>vgsdb</code> out of the physical volume. Then, create a <code>100MB</code> logical volume named <code>lvsdb</code> from <code>vgsdb</code>. Lastly, Format the logical volume to <code>ext4</code> and mount it to <code>/mnt/lvm</code>. Ensure that the mount is <code>persistent</code> and will be mounted during system bootup. </li>
+</ol>
 
 
 
