@@ -16,7 +16,7 @@
     
     
       
-        <title>Lab exam part2 - OpsWerks Pathways</title>
+        <title>Uhhh... - OpsWerks Pathways</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-administration-practical-assessment-part-2" class="md-skip">
+        <a href="#uhhh" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab exam part2
+              Uhhh...
             
           </span>
         </div>
@@ -1151,77 +1151,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Before you begin...
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tasks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-deploy-configure-and-maintain-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Deploy, Configure, and Maintain Systems
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-2-manage-basic-networking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 2: Manage Basic Networking
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-3-manage-users-and-groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 3: Manage Users and Groups
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-4-manage-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 4: Manage Security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-5-manage-containers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 5: Manage Containers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1238,60 +1167,8 @@
 
 
 
-<!---
-Lab Setup Requirements:
-- additional disk for /dev/sdb
-- install and run atd
--->
-
-<h1 id="linux-administration-practical-assessment-part-2">Linux Administration Practical Assessment Part 2</h1>
-<h2 id="before-you-begin">Before you begin...</h2>
-<ul>
-<li>Make sure you can login to your instance using your account and password </li>
-<li><strong>Note: Your instances will be rebooted after you have taken your exam</strong></li>
-</ul>
-<h2 id="tasks">Tasks</h2>
-<h2 id="task-1-deploy-configure-and-maintain-systems">Task 1: Deploy, Configure, and Maintain Systems</h2>
-<ol>
-<li>(5 pts) Install the <code>nginx</code> web server. Ensure it starts automatically on boot. </li>
-<li>(5 pts) Ensure the <code>status</code> of the <code>httpd</code> service is <code>running</code>.  </li>
-<li>(5 pts) Set up a <code>cron job</code> under <code>root user</code> that runs every Sunday 1AM to copy the <code>/var/log/messages</code> to <code>/backup/messages_[YYYYmmdd]-[HHMM].txt</code>. Ensure that the resulting file’s <code>filename</code> follows the date format (e.g. messages_20240123-0100.txt) </li>
-<li>(10 pts) Configure <code>firewalld</code> to allow incoming SSH connections, http, and https. Ensure that the setting is <code>persistent</code> across reboots. </li>
-</ol>
-<h2 id="task-2-manage-basic-networking">Task 2: Manage Basic Networking</h2>
-<ol>
-<li>(5 pts) List all <code>network interface name</code> (e.g. eth0) and <code>IP</code> of your system and save the result into <code>interfaces.txt</code> in your home folder. Exclude the interface that has an IP of <code>127.0.0.1</code>. See example below and follow its format: 
-<div class="highlight"><pre><span></span><code>$ cat /home/student/interfaces.txt 
-
-int0,123.245.1.2 
-
-int1,123.245.1.3 
-</code></pre></div></li>
-<li>(5 pts) Using <code>nmcli</code>, check the network connection details of interface <code>eth0</code> and find the line that shows if it’s configured to <code>autoconnect</code> or not. Redirect the output to <code>/root/nmcli_eth0_autoconnect.txt</code>. </li>
-</ol>
-<h2 id="task-3-manage-users-and-groups">Task 3: Manage Users and Groups</h2>
-<ol>
-<li>
-<p>(5 pts) Ensure that environment variable <code>SUBJECT</code> with a value of <code>LinuxAdmin1-2</code> is exported every time a user logs in </p>
-</li>
-<li>
-<p>(10 pts) Create a new user <code>tanjiro</code> and ensure that their home directory is <code>/srv/tanjiro_home</code>. </p>
-</li>
-<li>(10 pts) Create user <code>zenitsu</code>. Change the user's primary group to <code>slayer</code> and add <code>noisy</code> as its supplementary group. Create the groups if they are not yet existing. </li>
-<li>(10 pts) Create users <code>alonso</code> and <code>ricciardo</code> and add them to <code>f1</code> group as supplementary. Create the groups if they are not yet existing. </li>
-<li>(15 pts) Set <code>tanjiro's</code> minimum number of days before he can change his password to <code>7 days</code>, and maximum number to <code>90 days</code>. He also must be warned <code>2 days</code> prior of the date of his password expiration </li>
-<li>(5 pts) List all users who have the <code>/sbin/nologin</code> shell as their default and save this list to a file named <code>/root/nologin_users.txt</code>. </li>
-<li>(10 pts) Set the system so that all newly created users by default will be forced to change their password after <code>120 days</code></li>
-<li>(10 pts) Ensure that the user <code>noentry</code> has their account <code>locked</code>, then save the short information about the status of the password to a <code>/root/noentry_status.txt</code>.  </li>
-</ol>
-<h2 id="task-4-manage-security">Task 4: Manage Security</h2>
-<ol>
-<li>(10 pts) Ensure that <code>IPv4 forwarding</code> is enabled and make it <code>persistent</code> at boot. </li>
-</ol>
-<h2 id="task-5-manage-containers">Task 5: Manage Containers</h2>
-<ol>
-<li>(10 pts) Pull the latest <code>nginx image</code> and run a container named <code>webserver</code>, mapping host port <code>8080</code> to container port <code>80</code>. </li>
-</ol>
+<h1 id="uhhh">Uhhh...</h1>
+<p>I don't think you should be here...yet 😏 spend more time to review and do hands-on practices for now. We'll open this one soon!</p>
 
 
 
