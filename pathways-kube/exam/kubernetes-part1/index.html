@@ -113,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uhhh" class="md-skip">
+        <a href="#kubernetes-assessment" class="md-skip">
           Skip to content
         </a>
       
@@ -556,6 +556,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Kubernetes Part 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -566,6 +578,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before you begin...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concepts: Namespace, Deployments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concepts: ConfigMap, Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-lifecycle-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Lifecycle Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot-the-pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot the pod
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1167,6 +1276,92 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before you begin...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-namespace-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concepts: Namespace, Deployments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concepts-configmap-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concepts: ConfigMap, Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-lifecycle-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Lifecycle Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot-the-pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot the pod
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1183,8 +1378,185 @@
 
 
 
-<h1 id="uhhh">Uhhh...</h1>
-<p>I don't think you should be here...yet 😏 spend more time to review and do hands-on practices for now. We'll open this one soon!</p>
+<h1 id="kubernetes-assessment">Kubernetes Assessment</h1>
+<h2 id="before-you-begin">Before you begin...</h2>
+<ul>
+<li>Ensure with your instructor that your instance has been reset.</li>
+<li>Make sure you can login to your instance using your account and password (<a href="https://opswerks-lab.opswerks.net/opswerks-linux/lab/environment/">see here for reference</a>).</li>
+</ul>
+<h2 id="hosts">Hosts</h2>
+<ul>
+<li>&lt;username&gt;-p1t-pe-kub1-1a.pathways.opswerks.net - Control Plane</li>
+<li>&lt;username&gt;-p1t-pe-kub1-1b.pathways.opswerks.net - Worker Node</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<h3 id="core-concepts-namespace-deployments">Core Concepts: Namespace, Deployments</h3>
+<ol>
+<li>
+<p>Namespace</p>
+<p>Task: Create a new namespace called <code>opswerks</code>.</p>
+</li>
+<li>
+<p>Deploy a Pod.</p>
+<p>Task: Create a pod in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>Pod name: nginx-pod-1
+
+Image: nginx:latest
+</code></pre>
+</li>
+<li>
+<p>Create a Deployment</p>
+<p>Task: Create a deployment in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>Deployment name: nginx-deployment-1
+
+Replicas: 3
+
+Image: nginx:latest
+</code></pre>
+</li>
+<li>
+<p>Expose the Deployment</p>
+<p>Task: Expose the <code>nginx-deployment-1</code> as a service with the following specifications:</p>
+<pre><code>Service name: nginx-service
+
+Type: ClusterIP
+
+Port: 80
+</code></pre>
+<p>Validation: Verify that the namespace, pod, deployment, and service have been created correctly.</p>
+</li>
+</ol>
+<h3 id="core-concepts-configmap-secrets">Core Concepts: ConfigMap, Secrets</h3>
+<ol>
+<li>
+<p>Create a ConfigMap</p>
+<p>Task: Create a <code>ConfigMap</code> in the <code>opswerks</code> namespace with the following data:</p>
+<p>ConfigMap name: app-config</p>
+<pre><code>Data: app.properties: "key1=value1\nkey2=value2"
+</code></pre>
+</li>
+<li>
+<p>Create a Secret</p>
+<p>Task: Create a <code>Secret</code> in the <code>opswerks</code> namespace with the following data:</p>
+<pre><code>Secret name: app-secret
+
+Data: username=admin
+
+Data: password=opswerks2024
+</code></pre>
+</li>
+<li>
+<p>Deploy a Pod with <code>ConfigMap</code> and <code>Secret</code></p>
+<p>Task1: Create a <code>pod</code> in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>Pod name: app-pod
+
+Image: nginx:latest
+</code></pre>
+<p>Task2: Mount the ConfigMap <code>app-config</code> as a volume at <code>/etc/config</code></p>
+<p>Use environment variables from the Secret app-secret:</p>
+<pre><code>ENV_USERNAME from username
+
+ENV_PASSWORD from password
+</code></pre>
+</li>
+<li>
+<p>Create a Multi-Container Pod</p>
+<p>Task:Create a pod in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>Pod name: multi-pod
+
+First container:
+
+Name: nginx-container
+
+Image: nginx:latest
+
+Second container:
+
+Name: busybox-container
+
+Image: busybox:latest
+
+Command: ["/bin/sh", "-c", "echo Hello from Busybox; sleep 3600"]
+</code></pre>
+<p>Validations: </p>
+<pre><code>Ensure that both the ConfigMap and Secret are mounted as volumes in the pod app-pod.
+
+Verify that the ConfigMap, Secret, and pods have been created and are functioning correctly.
+</code></pre>
+</li>
+</ol>
+<h3 id="scheduling">Scheduling</h3>
+<ol>
+<li>
+<p>Creating Nodes with Labels</p>
+<p>Tasks:</p>
+<pre><code>- Label one of the existing nodes with role=frontend.
+
+- Label another node with role=backend.
+</code></pre>
+</li>
+<li>
+<p>Deploying Pods Using Node Selectors</p>
+<p>Tasks:</p>
+<pre><code>- Create a pod that runs on the node labeled role=frontend.
+
+- Create another pod that runs on the node labeled role=backend.
+</code></pre>
+</li>
+<li>
+<p>Use Taints and Tolerations</p>
+<p>Tasks:</p>
+<p>Taint the <code>CP</code> <code>node</code> with the key <code>dedicated</code>, value <code>frontend</code>, and effect <code>NoSchedule</code>.</p>
+<p>Deploy a <code>pod</code> that <code>tolerates the taint</code> applied to the node.</p>
+</li>
+</ol>
+<h3 id="application-lifecycle-management">Application Lifecycle Management</h3>
+<ol>
+<li>
+<p>Deploy an Application</p>
+<p>Tasks: Create a namespace named <code>opswerks</code>.</p>
+<p>Deploy a simple Nginx application using a Deployment named <code>nginx-deployment</code> in the <code>opswerks</code> namespace with the following specifications:</p>
+<pre><code>2 replicas
+
+Image: nginx:1.18
+
+Expose: port 80
+</code></pre>
+</li>
+<li>
+<p>Perform an Update</p>
+<p>Tasks: </p>
+<pre><code>- Update the nginx-deployment to use the image nginx:1.19.
+
+- Verify that the update is successful and all pods are updated.
+</code></pre>
+</li>
+<li>
+<p>Manage Application Configurations</p>
+<p>Tasks: Create a ConfigMap named nginx-config in <code>opswerks</code> namespace with the following configuration:</p>
+<pre><code>Key: index.html
+
+Value: A custom HTML content (e.g., Hello from OpsWerks! opswerks!)
+
+Update the nginx-deployment to use the nginx-config ConfigMap.
+
+Verify that the Nginx pods are using the configuration from the ConfigMap.
+</code></pre>
+</li>
+</ol>
+<h3 id="troubleshoot-the-pod">Troubleshoot the pod</h3>
+<ol>
+<li>
+<p>Scenario:
+    You are given a <code>pod</code> definition file that describes a simple web application. However, the pod is not running as expected. </p>
+<p>Your task is to diagnose and resolve the issue.</p>
+<pre><code>Tasks: Correct the pod definition file web-app.yaml in your home directory to ensure the pod runs successfully.
+</code></pre>
+<p>Note: Do not <code>delete</code> the existing <code>pod</code></p>
+<p>Validation: Ensure the pod is running and working correctly.</p>
+</li>
+</ol>
+<p>GOOD LUCK!</p>
 
 
 
